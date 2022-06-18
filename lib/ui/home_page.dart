@@ -5,6 +5,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix/bloc/movie_bloc.dart';
 import 'package:netflix/bloc/movie_bloc_event.dart';
 import 'package:netflix/bloc/movie_bloc_state.dart';
@@ -37,19 +38,13 @@ class HomeScreen extends StatelessWidget {
             color: Colors.black45,
           ),
           title: Text(
-            'Movies-db'.toUpperCase(),
-            style: Theme.of(context).textTheme.caption?.copyWith(
-                  color: Colors.black45,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+            'NETFLIX'.toUpperCase(),
+            style: GoogleFonts.bebasNeue(color: Color(0xffE50914)),
           ),
           actions: [
             Container(
               margin: EdgeInsets.only(right: 15),
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/images/logo.jpg'),
-              ),
+              child: CircleAvatar(),
             ),
           ],
         ),

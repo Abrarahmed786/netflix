@@ -15,9 +15,9 @@ import 'package:netflix/model/screen_shot.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MovieDetailScreen extends StatelessWidget {
-  final Movie movie;
+  late Movie movie;
 
-  const MovieDetailScreen({Key? key, required this.movie}) : super(key: key);
+  MovieDetailScreen({Key? key, required Movie movie}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

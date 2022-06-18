@@ -17,4 +17,12 @@ class ApiService {
           'Exception accoured: $error with stacktrace: $stacktrace');
     }
   }
+
+  getGenreList() {}
+
+  getMovieByGenre(int movieId) {}
+
+  getMovieDetail(int id) {}
+
+  getTrendingPerson() {}
 }
