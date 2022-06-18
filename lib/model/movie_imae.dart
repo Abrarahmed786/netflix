@@ -14,13 +14,11 @@ class MovieImage extends Equatable {
 
     return MovieImage(
       backdrops: (result['backdrops'] as List)
-              ?.map((b) => Screenshot.fromJson(b))
-              ?.toList() ??
-          List.empty(),
+          .map((b) => Screenshot.fromJson(b))
+          .toList(),
       posters: (result['posters'] as List)
-              ?.map((b) => Screenshot.fromJson(b))
-              ?.toList() ??
-          List.empty(),
+          .map((b) => Screenshot.fromJson(b))
+          .toList(),
     );
   }
 
